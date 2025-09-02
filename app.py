@@ -1,6 +1,18 @@
-noun = input("What is your noun:")
-verb = input("What is your verb:")
-adjective = input("What is your adjective:")
-story = f"you {noun.upper()} is most of the time in {verb.replace("verb","b")} and working so {adjective}"
-print("\nHere's your story: ")
-print(story)
+num1 = float(input("Enter your first number: "))
+num2 = float(input("Enter your second number: "))
+operation = input("\nEnter your operation(+,-,*,/): ")
+
+if operation == "+" :
+      result = num1 + num2
+      print(f"{num1}+{num2} = {result}")
+elif operation == "-" :
+      result = num1 - num2
+      print(f"{num1} - {num2} = {result}")
+elif operation == "*" :
+      result = num1 * num2
+      print(f"{num1} * {num2} = {result}")
+elif operation == "/" :
+      result = num1 / num2
+      print(f"{num1} / {num2} = {result}")
+else:
+    print("you have enter wrong operation")
